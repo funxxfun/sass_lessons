@@ -1,0 +1,43 @@
+.l-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  height: 48px;
+  z-index: 100;
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    width: 84px;
+    height: 100%;
+    img {
+      height: 85%;
+      object-fit: contain;
+    }
+  }
+  &__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 124px;
+    display: flex;
+    height: 100%;
+    a{
+      margin-right: 40px;
+      font-size: 13px;
+      color: #333;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      &:hover {
+        border-bottom: 2px solid #ea4f8b;
+      }
+    }
+  }
+}
+
