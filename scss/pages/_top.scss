@@ -1,0 +1,15 @@
+.keyVisual{
+  position: relative;
+  background: url(../img/kv_bg.jpg) center center no-repeat;
+  background-size: cover;
+  height: 540px;
+  margin-top: 48px;
+  &__ninjacode{
+    width: 36%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 45vw;
+  }
+}
+ 
