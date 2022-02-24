@@ -1,0 +1,55 @@
+.product {
+  $this:&;
+  position: relative;
+  display: block;
+  z-index: 10;
+  overflow: hidden;
+  &__inner {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  &__info {
+    width: 50%;
+  }
+  &__title {
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 1.4;
+    margin-bottom: 5px;
+  }
+  &__cap {
+    width: 50%;
+    position: relative;
+    top: 4vw;
+    box-shadow: 0px 1px 2px #d0d0d0;
+  }
+  &--new {
+    #{$this}__info {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: -30px;
+        right: 30px;
+        background-image: url(../img/new.png);
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+  &--wp {
+    border-top: 6px solid #efc15e;
+  }
+  &--yashiki {
+    border-top: 6px solid #fbc2bf;
+  }
+  &--yoroi {
+    border-top: 6px solid #4176a9;
+  }
+}

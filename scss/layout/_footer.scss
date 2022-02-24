@@ -1,0 +1,24 @@
+.l-footer{
+  padding: 40px 0;
+  background-color: #333;
+  &__logo{
+    width: 80px;
+    margin: 0 auto 30px auto;
+  }
+  &__nav{
+    text-align: center;
+    margin-bottom: 30px;
+    a{
+      color: #fff;
+      font-size: 13px;
+      margin: 0 5px;
+    }
+  }
+  &__copy{
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+ 
