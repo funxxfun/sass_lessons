@@ -1,0 +1,54 @@
+.p-course{
+  display: grid;
+  grid-template-columns: repeat(4, 240px);
+  gap: 48px;
+  &__item{
+    position: relative;
+    padding: 40px 20px;
+    background-color: #51565c;
+    border: solid 1px #cee9f0;
+    box-shadow: 0 0 8px #cee9f080;
+    border-radius: 5px;
+    overflow: hidden;
+    &--new{
+      &::after{
+        position: absolute;
+        top: 10px;
+        right: -36px;
+        content: "New!";
+        width: 130px;
+        background-color: #ea4f8b;
+        color: #fff;
+        font-size: 12px;
+        line-height: 16px;
+        transform: rotate(30deg);
+      }
+    }
+  }
+  &__title{
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  &__count{
+    font-size: 14px;
+    color: #ccc;
+    text-align: center;
+  }
+  &__logo{
+    margin: 30px auto;
+    text-align: center;
+    width: 100px;
+  }
+  &__btn{
+    display: block;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    background-color: #6c8589;
+    color: #fff;
+    font-size: 13px;
+    line-height: 20px;
+  }
+}

@@ -153,6 +153,20 @@ img {
   padding: 10px 0;
 }
 
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.l-section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.l-section--course {
+  background-color: #1e2124;
+}
+
 .c-account {
   position: absolute;
   right: 0;
@@ -196,6 +210,22 @@ img {
   line-height: 50px;
   border-radius: 30px;
   display: block;
+}
+
+.c-sectionTitle {
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.c-sectionTitle__icon {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.c-sectionTitle__icon--course img {
+  width: 40px;
 }
 
 .product {
@@ -263,6 +293,69 @@ img {
 
 .product--yoroi {
   border-top: 6px solid #4176a9;
+}
+
+.p-course {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (240px)[4];
+      grid-template-columns: repeat(4, 240px);
+  gap: 48px;
+}
+
+.p-course__item {
+  position: relative;
+  padding: 40px 20px;
+  background-color: #51565c;
+  border: solid 1px #cee9f0;
+  -webkit-box-shadow: 0 0 8px #cee9f080;
+          box-shadow: 0 0 8px #cee9f080;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.p-course__item--new::after {
+  position: absolute;
+  top: 10px;
+  right: -36px;
+  content: "New!";
+  width: 130px;
+  background-color: #ea4f8b;
+  color: #fff;
+  font-size: 12px;
+  line-height: 16px;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.p-course__title {
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.p-course__count {
+  font-size: 14px;
+  color: #ccc;
+  text-align: center;
+}
+
+.p-course__logo {
+  margin: 30px auto;
+  text-align: center;
+  width: 100px;
+}
+
+.p-course__btn {
+  display: block;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  background-color: #6c8589;
+  color: #fff;
+  font-size: 13px;
+  line-height: 20px;
 }
 
 .keyVisual {
